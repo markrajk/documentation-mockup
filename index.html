@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/scss/style.scss" />
+    <script type="module" src="./public/js/main.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <side class="side"></side>
+      <div class="content">
+        <div class="container">
+          <section class="section section-info">
+            <article class="section-info-article">
+              <h1>[GA4] Dimensions and metrics</h1>
+              <p>
+                This article describes the <a href="#">dimensions</a> and
+                <a href="#">metrics</a> that appear in your reports and
+                explorations and in the audience and segment builders. You can
+                also access these dimensions and metrics outside of Analytics
+                using the <a href="#">Google Analytics Data API.</a> If you want
+                to collect information that Analytics doesn't capture with these
+                dimensions and metrics, you can create your own custom
+                dimensions and metrics. To find a dimension or metric, search
+                this article (using Ctrl+F or Command+F on your keyboard) or use
+                the <a href="#">GA4 Dimensions & Metrics Explorer</a> to see the
+                dimensions and metrics for a given property.
+              </p>
+            </article>
+            <article class="section-info-article">
+              <h2>How they're populated</h2>
+              <p>
+                Some dimensions and metrics are populated automatically when you
+                <a href="#">add the global site tag (gtag.js)</a> to your
+                website or
+                <a href="#">add the Google Analytics for Firebase SDK</a> to
+                your mobile or web application. Other dimensions and metrics
+                require some configuration before they're populated (as
+                described in the following sections).
+              </p>
+            </article>
+            <article class="section-info-article">
+              <h2>Grayed-out dimensions and metrics</h2>
+              <p>
+                A dimension or metric may be grayed out when the dimension or
+                metric is <a href="#">incompatible</a> with other dimensions or
+                metrics that you applied to a report or exploration, or when you
+                can't apply the dimension or metric to the selected exploration
+                <a href="#">technique</a>.
+              </p>
+            </article>
+            <article class="section-info-article">
+              <h2>What the value (not set) means</h2>
+              <p>
+                (not set) is a placeholder name that Google Analytics uses when
+                it hasn't received information for a dimension. The following
+                sections describe how to populate each dimension so that you
+                don't see the (not set) value. When you send an empty value to
+                Analytics, you will see a blank value instead of (not set); (not
+                set) appears when no value is sent.
+              </p>
+            </article>
+          </section>
+
+          <section class="section section-search">
+            <div class="input-wrapper">
+              <input type="text" placeholder="Type here to search..." />
+            </div>
+            <div class="buttons">
+              <button class="button button-primary">Expand all</button>
+              <button class="button button-primary">Collapse all</button>
+            </div>
+          </section>
+
+          <section class="section section-content">
+            <div class="accordion open" id="accordion-01">
+              <div class="accordion-header" target="accordion-01">
+                <h3 class="accordion-header-title">Attribution</h3>
+              </div>
+              <div class="accordion-body">
+                <p class="accordion-body-info">
+                  The following dimensions provide information for the ad
+                  platforms you integrate with Analytics. For example, the
+                  Campaign dimension includes the name of the marketing
+                  campaigns from Search Ads 360, Display & Video 360, and any
+                  other Ads platforms you integrate with Analytics.
+                </p>
+                <table cellspacing="0" class="table">
+                  <thead class="table-header">
+                    <tr>
+                      <th><p>Dimension</p></th>
+                      <th><p>What it is</p></th>
+                      <th><p>How it's populated</p></th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td><p>Campaign / Campaign ID</p></td>
+                      <td>
+                        <p>
+                          The name and ID of a promotion or marketing campaign
+                          that led to a <a href="#">conversion event.</a>
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Default channel grouping</p></td>
+                      <td>
+                        <p>
+                          Channel groupings are rule-based definitions of your
+                          traffic sources.
+                        </p>
+
+                        <p>
+                          <a href="#">Default channel groupings</a> include
+                          'Direct', 'Organic Search', 'Paid Social', 'Organic
+                          Social', 'Email', 'Affiliates', 'Referral', 'Paid
+                          Search', 'Video', and 'Display'.
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Medium</p></td>
+                      <td>
+                        <p>
+                          The method for acquiring users to your website or
+                          application. Examples include: 'affiliate': users who
+                          click a link through an affiliate program 'cpc':
+                          (short for cost-per-click) users who click a paid
+                          advertisement 'email': users who click a link in an
+                          email marketing campaign 'organic': users who click a
+                          link from a search engine 'referral': users who click
+                          a link on a website (e.g., a link in a video
+                          description) '(none)': direct traffic
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Source</p></td>
+                      <td>
+                        <p>
+                          A representation of the publisher or inventory source
+                          from which traffic originated. For example, users who
+                          return to your website from Google Search show as
+                          "google" in the Session source dimension. Examples
+                          include “google”, “youtube”, and “gmail”.
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Source / medium</p></td>
+                      <td>
+                        <p>
+                          The <a href="#">source</a> and
+                          <a href="#">medium</a> that led a user to arrive on
+                          your website or application.
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Source platform</p></td>
+                      <td>
+                        <p>
+                          The platform where you manage buying activity (such as
+                          where budgets, targeting criteria, and so on are set).
+                          Examples include: 'DV360' (traffic from Display &
+                          Video 360 marketing activity) 'Google Ads' (traffic
+                          from Google Ads marketing activity) 'Manual' (traffic
+                          that isn't from Google media marketing activity)
+                          'SA360' (traffic from Search Ads 360 marketing
+                          activity) 'SFMC' (traffic from Salesforce Marketing
+                          Cloud marketing activity) 'Shopping Free Listings'
+                          (traffic from Google Merchant Center marketing
+                          activity)
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="accordion open" id="accordion-02">
+              <div class="accordion-header" target="accordion-02">
+                <h3 class="accordion-header-title">Google Ads</h3>
+              </div>
+              <div class="accordion-body">
+                <p class="accordion-body-info">
+                  The following dimensions provide information for the ad
+                  platforms you integrate with Analytics. For example, the
+                  Campaign dimension includes the name of the marketing
+                  campaigns from Search Ads 360, Display & Video 360, and any
+                  other Ads platforms you integrate with Analytics.
+                </p>
+                <table cellspacing="0" class="table">
+                  <thead class="table-header">
+                    <tr>
+                      <th><p>Dimension</p></th>
+                      <th><p>What it is</p></th>
+                      <th><p>How it's populated</p></th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td><p>Campaign / Campaign ID</p></td>
+                      <td>
+                        <p>
+                          The name and ID of a promotion or marketing campaign
+                          that led to a <a href="#">conversion event.</a>
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Default channel grouping</p></td>
+                      <td>
+                        <p>
+                          Channel groupings are rule-based definitions of your
+                          traffic sources.
+                        </p>
+
+                        <p>
+                          <a href="#">Default channel groupings</a> include
+                          'Direct', 'Organic Search', 'Paid Social', 'Organic
+                          Social', 'Email', 'Affiliates', 'Referral', 'Paid
+                          Search', 'Video', and 'Display'.
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Medium</p></td>
+                      <td>
+                        <p>
+                          The method for acquiring users to your website or
+                          application. Examples include: 'affiliate': users who
+                          click a link through an affiliate program 'cpc':
+                          (short for cost-per-click) users who click a paid
+                          advertisement 'email': users who click a link in an
+                          email marketing campaign 'organic': users who click a
+                          link from a search engine 'referral': users who click
+                          a link on a website (e.g., a link in a video
+                          description) '(none)': direct traffic
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Source</p></td>
+                      <td>
+                        <p>
+                          A representation of the publisher or inventory source
+                          from which traffic originated. For example, users who
+                          return to your website from Google Search show as
+                          "google" in the Session source dimension. Examples
+                          include “google”, “youtube”, and “gmail”.
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Source / medium</p></td>
+                      <td>
+                        <p>
+                          The <a href="#">source</a> and
+                          <a href="#">medium</a> that led a user to arrive on
+                          your website or application.
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Source platform</p></td>
+                      <td>
+                        <p>
+                          The platform where you manage buying activity (such as
+                          where budgets, targeting criteria, and so on are set).
+                          Examples include: 'DV360' (traffic from Display &
+                          Video 360 marketing activity) 'Google Ads' (traffic
+                          from Google Ads marketing activity) 'Manual' (traffic
+                          that isn't from Google media marketing activity)
+                          'SA360' (traffic from Search Ads 360 marketing
+                          activity) 'SFMC' (traffic from Salesforce Marketing
+                          Cloud marketing activity) 'Shopping Free Listings'
+                          (traffic from Google Merchant Center marketing
+                          activity)
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="accordion open" id="accordion-03">
+              <div class="accordion-header" target="accordion-03">
+                <h3 class="accordion-header-title">Search Ads 360</h3>
+              </div>
+              <div class="accordion-body">
+                <p class="accordion-body-info">
+                  The following dimensions provide information for the ad
+                  platforms you integrate with Analytics. For example, the
+                  Campaign dimension includes the name of the marketing
+                  campaigns from Search Ads 360, Display & Video 360, and any
+                  other Ads platforms you integrate with Analytics.
+                </p>
+                <table cellspacing="0" class="table">
+                  <thead class="table-header">
+                    <tr>
+                      <th><p>Dimension</p></th>
+                      <th><p>What it is</p></th>
+                      <th><p>How it's populated</p></th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td><p>Campaign / Campaign ID</p></td>
+                      <td>
+                        <p>
+                          The name and ID of a promotion or marketing campaign
+                          that led to a <a href="#">conversion event.</a>
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Default channel grouping</p></td>
+                      <td>
+                        <p>
+                          Channel groupings are rule-based definitions of your
+                          traffic sources.
+                        </p>
+
+                        <p>
+                          <a href="#">Default channel groupings</a> include
+                          'Direct', 'Organic Search', 'Paid Social', 'Organic
+                          Social', 'Email', 'Affiliates', 'Referral', 'Paid
+                          Search', 'Video', and 'Display'.
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Medium</p></td>
+                      <td>
+                        <p>
+                          The method for acquiring users to your website or
+                          application. Examples include: 'affiliate': users who
+                          click a link through an affiliate program 'cpc':
+                          (short for cost-per-click) users who click a paid
+                          advertisement 'email': users who click a link in an
+                          email marketing campaign 'organic': users who click a
+                          link from a search engine 'referral': users who click
+                          a link on a website (e.g., a link in a video
+                          description) '(none)': direct traffic
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Source</p></td>
+                      <td>
+                        <p>
+                          A representation of the publisher or inventory source
+                          from which traffic originated. For example, users who
+                          return to your website from Google Search show as
+                          "google" in the Session source dimension. Examples
+                          include “google”, “youtube”, and “gmail”.
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Source / medium</p></td>
+                      <td>
+                        <p>
+                          The <a href="#">source</a> and
+                          <a href="#">medium</a> that led a user to arrive on
+                          your website or application.
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><p>Source platform</p></td>
+                      <td>
+                        <p>
+                          The platform where you manage buying activity (such as
+                          where budgets, targeting criteria, and so on are set).
+                          Examples include: 'DV360' (traffic from Display &
+                          Video 360 marketing activity) 'Google Ads' (traffic
+                          from Google Ads marketing activity) 'Manual' (traffic
+                          that isn't from Google media marketing activity)
+                          'SA360' (traffic from Search Ads 360 marketing
+                          activity) 'SFMC' (traffic from Salesforce Marketing
+                          Cloud marketing activity) 'Shopping Free Listings'
+                          (traffic from Google Merchant Center marketing
+                          activity)
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          To learn how to populate this dimension, see
+                          <a href="#"
+                            >Traffic-source dimensions, manual tagging, and
+                            auto-tagging.</a
+                          >
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

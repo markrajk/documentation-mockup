@@ -1,0 +1,19 @@
+{
+  "name": "table_documentation",
+  "version": "1.0.0",
+  "description": "",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
