@@ -17,13 +17,13 @@
 80C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\.gitignore132967899718301635 0
 100C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\readdirp\index.js121436361000000000 0
 99C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\term-size\vendor132967715694533336 1
-74C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist132970234042909315 1
+74C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist132970235911445911 1
 135C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\caniuse-lite\data\features\contentsecuritypolicy2.js121436361000000000 0
 150C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\@parcel\core\test\fixtures\config-extends-not-found\.parcelrc-json5121436361000000000 0
 125C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\caniuse-lite\data\features\css-autofill.js121436361000000000 0
 102C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\lodash\fp\dissoc.js121436361000000000 0
 88C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\acorn132967715716285353 1
-80C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\index.html132970234811631819 0
+80C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\index.html132970236668091146 0
 94C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\fs.realpath132967881844667547 1
 92C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\callsites132967715716165336 1
 120C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\@parcel\utils\test\objectHash.test.js121436361000000000 0
@@ -5881,6 +5881,6 @@
 96C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.2db1dc11.js.map132970101054499933 0
 93C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.565b3c59.css132970234042889308 0
 97C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.565b3c59.css.map132970234042889308 0
-85C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.html132970229827972556 0
+85C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.html132970235911375900 0
 99C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\template.cd81bfe0.js.map132970123156321024 0
 88C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\template.html132970127534470612 0
