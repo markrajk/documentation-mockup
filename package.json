@@ -1,11 +1,12 @@
 {
-  "name": "table_documentation",
+  "name": "documentation-mockup",
   "version": "1.0.0",
   "description": "",
   "source": "index.html",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel ./*.html",
+    "predeploy": "rm -rf dist && parcel build ./*.html --public-url \"https://github.com/markrajk/documentation-mockup\"",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
