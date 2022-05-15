@@ -37,14 +37,17 @@ docReady(() => {
     const searchValue = e.currentTarget.value.toLowerCase();
     const accordionElements = section.querySelectorAll(".accordion");
 
+    section.classList.remove("hide");
     // go trough accordions
     [...accordionElements].forEach((accordion) => {
       //get all first column text from single accordion
       const firstColEls = accordion.querySelectorAll(
-        ".table tbody tr td:first-child"
+        ".table tbody tr td:first-child p"
       );
       const firstColTexts = [...firstColEls]
-        .map((text) => text.innerText.toLowerCase())
+        .map((text) => {
+          return text.innerHTML.toLowerCase();
+        })
         .join(" ");
 
       //if any 1st column conains phrase dont hide accordion else hide accordion
@@ -55,7 +58,6 @@ docReady(() => {
         accordion.classList.add("hide");
       }
     });
-
     //if any on section's accordions has results dont hide section else hide section
     counter ? section.classList.remove("hide") : section.classList.add("hide");
     return counter;
