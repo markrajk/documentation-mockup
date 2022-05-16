@@ -131,16 +131,6 @@
   }
 }
 
-@function resize($base, $value) {
-  $result: $base * $value;
-  @return $result;
-}
-
-@function emcalc($base, $value) {
-  $result: $base / $value;
-  @return $result * 1em;
-}
-
 *,
 *::before,
 *::after {
@@ -310,6 +300,7 @@ a {
     font-size: var(--font-size-body);
     color: var(--text-color);
     border-bottom: 1px solid rgb(168, 173, 184);
+    font-family: inherit;
 
     &:focus {
       & ~ div {
@@ -484,8 +475,6 @@ td {
     &::-webkit-scrollbar:horizontal {
       height: 0.5rem;
     }
-    &::-webkit-scrollbar-track {
-    }
     &::-webkit-scrollbar-thumb {
       background: var(--color-blue);
     }
@@ -494,10 +483,6 @@ td {
       padding: 0 var(--s-3);
       padding-right: 0;
     }
-  }
-
-  & tr th:first-child,
-  & tr td:first-child {
   }
 
   & th p,
@@ -531,6 +516,9 @@ td {
 
   &-body {
     & tr {
+      &.hide {
+        display: none;
+      }
       &:first-of-type {
         & td {
           padding-top: var(--s-3);
@@ -550,16 +538,6 @@ td {
             @include text-body();
           }
         }
-      }
-
-      &:nth-child(2n + 1) td:first-child {
-        position: relative;
-        border-left: 3px solid var(--color-white);
-      }
-
-      &:nth-child(2n + 2) td:first-child {
-        position: relative;
-        border-left: 3px solid var(--color-orange);
       }
     }
   }

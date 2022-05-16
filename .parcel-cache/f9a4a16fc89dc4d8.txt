@@ -8,7 +8,7 @@
 92C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\commander132967715716195337 1
 103C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\yaml\browser\util.js121436361000000000 0
 114C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\caniuse-lite\data\regions\CR.js121436361000000000 0
-92C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\public\scss\style.scss132970421745713151 0
+92C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\public\scss\style.scss132972032702501028 0
 99C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\is-glob\index.js121436361000000000 0
 87C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\package-lock.json132967899954793399 0
 118C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\caniuse-lite\data\features\xhtml.js121436361000000000 0
@@ -17,7 +17,7 @@
 80C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\.gitignore132967899718301635 0
 100C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\readdirp\index.js121436361000000000 0
 99C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\term-size\vendor132967715694533336 1
-74C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist132971027660394499 1
+74C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist132972032704684876 1
 135C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\caniuse-lite\data\features\contentsecuritypolicy2.js121436361000000000 0
 150C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\@parcel\core\test\fixtures\config-extends-not-found\.parcelrc-json5121436361000000000 0
 125C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\caniuse-lite\data\features\css-autofill.js121436361000000000 0
@@ -62,12 +62,12 @@
 100C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\caniuse-lite\dist132967715702330814 1
 81C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\public\scss132967729363039067 1
 132C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\caniuse-lite\data\features\link-rel-preconnect.js121436361000000000 0
-92C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.2db1dc11.js132971027660364493 0
+92C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.2db1dc11.js132971710444542936 0
 99C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\terser\lib\utils132967715698007006 1
 97C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\balanced-match132967881844667547 1
 127C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\lmdb\dependencies\v8\v8-fast-api-calls-v16.h121436361000000000 0
 107C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\brace-expansion\index.js131626435880000000 0
-87C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\public\js\main.js132971027972143255 0
+87C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\public\js\main.js132971710443692826 0
 99C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\lodash\result.js121436361000000000 0
 101C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\timsort\.npmignore131138581980000000 0
 97C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\dom-serializer132967715716205330 1
@@ -5878,9 +5878,9 @@
 94C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\.bin\terser132967715720972948 0
 98C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\.bin\terser.cmd132967715720972948 0
 98C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\node_modules\.bin\terser.ps1132967715720972948 0
-96C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.2db1dc11.js.map132971027660384496 0
-93C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.565b3c59.css132971021421095697 0
-97C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.565b3c59.css.map132971021421095697 0
+96C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.2db1dc11.js.map132971710444552952 0
+93C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.565b3c59.css132972032704643663 0
+97C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.565b3c59.css.map132972032704643663 0
 85C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\index.html132971021422604704 0
 99C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\template.cd81bfe0.js.map132971021421225720 0
 88C:\Users\marko\OneDrive\Desktop\MARKO\my_projects\table_documentation\dist\template.html132971021422604704 0
